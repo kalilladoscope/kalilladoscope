@@ -1406,6 +1406,28 @@ p {
     right: auto;
   }
 
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact__detail {
+    align-items: center;
+  }
+
+  .contact__social {
+    align-items: center;
+  }
+
+  .contact__social-link {
+    justify-content: center;
+  }
+
   .footer__inner {
     grid-template-columns: 1fr;
   }
