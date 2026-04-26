@@ -104,7 +104,7 @@ export const artist = {
       'I take on a small number of commissions each year to ensure each piece receives the time and attention it deserves.',
     // Change to 'open', 'closed', or 'waitlist'
     status: 'open' as 'open' | 'closed' | 'waitlist',
-    statusNote: 'Currently accepting commissions — estimated 6–8 week turnaround.',
+    statusNote: 'Accepting commissions',
     tiers: [
       {
         title: 'Small Original',

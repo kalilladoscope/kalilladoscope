@@ -191,13 +191,12 @@ function Commissions() {
     <Section id="commissions" variant="alt" label="Custom Work" title={commissions.heading}>
       <div className="container commissions__max" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <div className={`commissions__status ${statusClass}`}>
-          <span className="commissions__status-dot" />
           <span>{statusLabel}</span>
           <span style={{ opacity: 0.7 }}>&mdash;</span>
           <span>{commissions.statusNote}</span>
         </div>
 
-        <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: '64ch' }}>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: 'none' }}>
           {commissions.intro}
         </p>
 
@@ -218,7 +217,9 @@ function Commissions() {
         </div>
 
         <p className="commissions__note">{commissions.note}</p>
-        <Button href="#contact" variant="outline">Get in Touch</Button>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Button href="#contact" variant="outline">Get in Touch</Button>
+        </div>
       </div>
     </Section>
   );

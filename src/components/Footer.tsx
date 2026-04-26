@@ -20,9 +20,6 @@ export default function Footer() {
                 {item.label}
               </a>
             ))}
-          </nav>
-
-          <div className="footer__social" style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
             {artist.contact.social.map((s) => (
               <a
                 key={s.platform}
@@ -34,7 +31,7 @@ export default function Footer() {
                 {s.platform}
               </a>
             ))}
-          </div>
+          </nav>
 
           <p className="footer__credit">{site.footer.credit}</p>
         </div>
