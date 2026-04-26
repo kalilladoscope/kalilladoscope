@@ -917,10 +917,7 @@ p {
    ============================================================ */
 
 .milestones__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  max-width: 560px;
+  max-width: 760px;
   margin: 0 auto;
   position: relative;
 }
@@ -937,23 +934,45 @@ p {
 }
 
 .milestone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.4rem;
-  padding: 1.25rem 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
   position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.milestone:last-child {
+  padding-bottom: 0;
+}
+
+.milestone:nth-child(odd) {
+  padding-right: calc(50% + 1.5rem);
+  text-align: right;
+}
+
+.milestone:nth-child(even) {
+  padding-left: calc(50% + 1.5rem);
+  text-align: left;
+}
+
+.milestone::before {
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 2px solid var(--bg);
   z-index: 1;
 }
 
+.milestone:nth-child(odd)::before  { right: calc(50% - 4.5px); }
+.milestone:nth-child(even)::before { left:  calc(50% - 4.5px); }
+
 .milestone__year {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--accent);
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .milestone__body {
@@ -1353,6 +1372,11 @@ p {
 
   .hero__content {
     padding: 3rem 1.25rem;
+    text-align: center;
+  }
+
+  .hero__actions {
+    justify-content: center;
   }
 
   .gallery__grid {
@@ -1365,6 +1389,21 @@ p {
 
   .process__steps {
     grid-template-columns: 1fr;
+  }
+
+  .milestones__list::before { left: 0; transform: none; }
+
+  .milestone:nth-child(odd),
+  .milestone:nth-child(even) {
+    padding-right: 0;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+
+  .milestone:nth-child(odd)::before,
+  .milestone:nth-child(even)::before {
+    left: -4.5px;
+    right: auto;
   }
 
   .footer__inner {
