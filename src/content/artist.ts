@@ -3,7 +3,7 @@
 // ============================================================
 
 export const artist = {
-  name: 'Lilla',
+  name: 'Kalilladoscope',
 
   shortBio:
     'Patternist painter originally from Hungary, now based in Australia, exploring mandalas, symmetry, and psychedelic textures through oil painting.',
