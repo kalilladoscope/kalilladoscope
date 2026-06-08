@@ -10,9 +10,11 @@ export const artist = {
 
   // Each string is rendered as a separate paragraph
   bio: [
-    'I am originally from Hungary and currently based in Australia, where I continue to develop my practice as a patternist painter in the abstract space.',
-    'My work is rooted in a fascination with patterns — the intricate geometry of mandalas, the rhythm of repeating textures, and the way symmetry can emerge from what feels like unstructured chaos. I am drawn to psychedelic expression and the idea that beauty can arise spontaneously from within.',
-    'I work primarily in oil painting, exploring shapes and structures in an ad hoc, intuitive way — letting each composition evolve organically rather than following a fixed plan.',
+    'Originally from Hungary and currently based in Australia, I continue to develop my practice as an abstract painter.',
+    'My work is rooted in a fascination with patterns. The pieces are more about immersion than symbolism: an opportunity for me and an invitation for you to focus, slow down, and sustain attention in a world that rarely allows for either.',
+    'The process of creation is very important to me because of what it offers, including experimentation with the duality of carefully controlled symmetry paired with intense and vibrant colours and all the emotions that are channeled into a work.',
+    'The paintings are fully hand-painted, primarily in aquarelle. My technique is old and traditional, but the creative process and the finished work are about and for the present.',
+    'Some compositions evolve freely and organically, while others reflect more my fascination with structures. Across all of them, I aim to fuse attention to detail and balance with playfulness and spontaneity. The process as a whole always feels more like listening and exploration than planning and designing.',
   ],
 
   // Path relative to the public directory, or an absolute URL
@@ -22,8 +24,7 @@ export const artist = {
   statement: {
     heading: 'Artist Statement',
     body: [
-      'I am drawn to beautiful patterns that can express structure and symmetry from a flow of unstructured chaos, and am currently exploring mandala inspired styles.',
-      'I paint to embody a state of flow and express what naturally comes from within.',
+      'I paint to embody a state of flow and harmony and express what naturally comes from within. Behind every painting are many hours of meditative concentration and serenity. I hope that by looking at them, my moments of inspiration and calm can turn into yours, too.',
     ],
   },
 
@@ -34,25 +35,19 @@ export const artist = {
         number: '01',
         title: 'Shape Exploration',
         description:
-          'Every piece begins with exploring shapes — playing with forms, curves, and repetitions until a visual language starts to emerge. There are no rules at this stage, only curiosity.',
+          'Every piece begins with exploration: starting from the centre, playing with forms, colours, and repetition until a visual language starts to emerge. At this stage, there are no strict rules, only curiosity and patience.',
       },
       {
         number: '02',
-        title: 'Ad Hoc Structure Planning',
+        title: 'Intuitive Structure Building',
         description:
-          'Rather than a fixed blueprint, I plan structure intuitively — responding to what the shapes suggest. Symmetry and pattern guide the composition as it reveals itself.',
+          'Rather than following a fixed blueprint, I develop each composition intuitively, pattern by little pattern. Symmetry and rhythm guide the work as it gradually reveals itself. I build each piece using an unusual technique in aquarelle, working with minimal water to create richness, softness, and depth. The medium can hold both soft, delicate detail and vibrant intensity, qualities that suit the psychedelic quality of my patterns.',
       },
       {
         number: '03',
-        title: 'Oil Painting',
-        description:
-          'I build the work in oil paint, layering colour and texture with depth and richness. Oil allows for slow, deliberate transitions and a luminosity that suits the psychedelic quality of the patterns.',
-      },
-      {
-        number: '04',
         title: 'Refinement & Finishing',
         description:
-          'Final passes bring definition to edges, deepen contrasts, and unify the composition. The piece is finished when the pattern feels complete — balanced yet alive.',
+          'The finishing touches bring sharper definition, stronger contrast, and greater cohesion. This is usually also the stage for adding “just one” more detail. A piece is complete when it feels balanced and dense with life and movement.',
       },
     ],
   },
@@ -64,21 +59,21 @@ export const artist = {
         year: '1999',
         title: 'Painting Furniture for a Tai Chi Community',
         description:
-          'As a child, painted furniture with patterns for a local tai chi community — an early encounter with the meditative quality of pattern-making.',
+          'As a child, painted murals and furniture with patterns for a local tai chi community — an early encounter with the meditative quality of pattern-making.',
         type: 'milestone' as const,
       },
       {
         year: '2006',
         title: 'Developing Ad Hoc Pattern Art and Human Structures',
         description:
-          'Began developing a more personal language of ad hoc pattern art, incorporating organic human structures and freeform composition.',
+          'Began developing a more personal language of ad hoc pattern art, incorporating patterns of folk art, nature, and freeform composition.',
         type: 'milestone' as const,
       },
       {
         year: '2013',
         title: 'Exploring Themes of Colour',
         description:
-          'A focused period of exploring how colour interacts with pattern — experimenting with palettes, contrast, and the emotional resonance of hue.',
+          'A focused period of exploring how colour interacts with pattern — experimenting with contrast, emotional resonance of colours, and their potential to build structure.',
         type: 'milestone' as const,
       },
       {
@@ -90,9 +85,9 @@ export const artist = {
       },
       {
         year: '2026',
-        title: 'Building Beautiful Mandala Paintings',
+        title: 'Building Mandala-inspired Paintings',
         description:
-          'Currently focused on creating mandala-inspired paintings that embody symmetry, psychedelic expression, and the flow of structured chaos.',
+          'Currently focused on creating mandala-inspired paintings that offer immersion and a calm, meditative state of mind for the viewer.',
         type: 'milestone' as const,
       },
     ],
@@ -151,7 +146,7 @@ export const artist = {
   contact: {
     heading: 'Get in Touch',
     intro:
-      "Whether you're interested in a commission, an original work, or simply want to say hello — I'd love to hear from you.",
+      "Whether you’re interested in a commission, a collaboration, or simply would like to say hello, I’d love to hear from you.",
     email: 'hello@lilla.art',
     location: 'Australia',
     social: [

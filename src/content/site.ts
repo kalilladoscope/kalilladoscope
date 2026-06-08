@@ -7,7 +7,7 @@ export const site = {
   title: 'Lilla Diallo-Farmasi',
   tagline: 'Patternist Painter',
   description:
-    'Original artwork exploring the beauty of patterns — mandalas, textures, and psychedelic symmetry born from a flow of unstructured chaos.',
+    'Original artwork exploring the beauty of patterns — mandalas and psychedelic art, chaos captured in symmetry.',
 
   // Navigation links — href values should match section IDs with a leading #
   nav: [
