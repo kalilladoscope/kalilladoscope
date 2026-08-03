@@ -6,7 +6,7 @@ export const artist = {
   name: 'Kalilladoscope',
 
   shortBio:
-    'Patternist painter originally from Hungary, now based in Australia, exploring mandalas, symmetry, and psychedelic textures through oil painting.',
+    'Patternist painter originally from Hungary, now based in Australia, exploring mandalas, symmetry, and psychedelic textures through aquarelle painting.',
 
   // Each string is rendered as a separate paragraph
   bio: [
@@ -103,36 +103,38 @@ export const artist = {
     tiers: [
       {
         title: 'Small Original',
-        size: 'A5 (14.8 × 21 cm)',
-        price: 'From £120',
+        size: 'A5 (14.8 × 21 cm) or 15 x 15 cm',
+        price: 'From $220',
         description:
           'A single mandala or pattern study. Ideal as a personal gift or small wall piece.',
         includes: [
-          'Original oil painting on 300gsm paper',
+          'Original aquarelle painting on 300gsm paper',
+          'Progress photographs',
           'Certificate of authenticity',
           'Unframed, posted flat',
         ],
       },
       {
         title: 'Medium Original',
-        size: 'A4 (21 × 29.7 cm)',
-        price: 'From £220',
+        size: 'A4 (21 × 29.7 cm) or 22 x 22 cm',
+        price: 'From $440',
         description:
           'A more detailed composition — a mandala portrait, pattern study, or mixed-element piece.',
         includes: [
-          'Original oil painting on 300gsm paper',
+          'Original aquarelle painting on 300gsm paper',
+          'Progress photographs',
           'Certificate of authenticity',
           'Unframed, posted flat',
         ],
       },
       {
         title: 'Large / Bespoke',
-        size: 'A3+ (42 × 60 cm or custom)',
-        price: 'From £450',
+        size: 'A3+ (42 × 60 cm) or 30 x 30 cm or custom',
+        price: 'From $880',
         description:
           'A significant, bespoke work. Includes full consultation, reference gathering, and revision stages.',
         includes: [
-          'Original oil painting with mixed media',
+          'Original aquarelle painting',
           'Full consultation process',
           'Progress photographs',
           'Certificate of authenticity',
@@ -147,13 +149,13 @@ export const artist = {
     heading: 'Get in Touch',
     intro:
       "Whether you’re interested in a commission, a collaboration, or simply would like to say hello, I’d love to hear from you.",
-    email: 'hello@lilla.art',
+    email: 'kalilladoscope@gmail.com',
     location: 'Australia',
     social: [
       {
         platform: 'Instagram',
-        handle: '@lillareadsminds',
-        href: 'https://instagram.com/lillareadsminds',
+        handle: '@kalilladoscope',
+        href: 'https://instagram.com/kalilladoscope',
       },
       {
         platform: 'Etsy',

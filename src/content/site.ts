@@ -5,7 +5,7 @@
 export const site = {
   // Browser tab title and main heading
   title: 'Lilla Diallo-Farmasi',
-  tagline: 'Patternist Painter',
+  tagline: 'Abstract Painter',
   description:
     'Original artwork exploring the beauty of patterns — mandalas and psychedelic art, chaos captured in symmetry.',
 

@@ -27,7 +27,7 @@ function Hero() {
       <div className="hero__content">
         <span className="hero__eyebrow">{site.tagline}</span>
         <h1 className="hero__title">{site.title}</h1>
-        <p className="hero__tagline">Oil Painting &amp; Mixed Abstract Media</p>
+        <p className="hero__tagline">Aquarelle Paintings</p>
         <p className="hero__description">{site.description}</p>
         <div className="hero__actions">
           <Button href="#gallery">View Gallery</Button>
