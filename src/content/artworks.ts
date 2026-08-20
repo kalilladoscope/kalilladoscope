@@ -35,7 +35,7 @@ export const artworks: Artwork[] = [
     size: 'A4 (21 × 29.7 cm)',
     description:
       'The first in a dedicated mandala series — eight-fold symmetry built up in layers of warm gold and deep violet, exploring the emergence of order from spontaneous mark-making.',
-    imagePath: './assets/artworks/mandala-study-1.svg',
+    imagePath: './assets/artworks/icesquare.jpg',
     altText: 'An eight-fold mandala in gold and violet oil paint with intricate pattern detail',
     collection: 'Mandala Studies',
     status: 'personal collection',
