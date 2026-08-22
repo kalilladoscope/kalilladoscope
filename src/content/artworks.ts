@@ -29,16 +29,16 @@ export const collections: string[] = ['Mandala Studies', 'Geometric Meditations'
 export const artworks: Artwork[] = [
   {
     id: 'm-001',
-    title: 'Mandala Study I',
-    year: 2024,
-    medium: 'Oil on canvas',
-    size: 'A4 (21 × 29.7 cm)',
+    title: 'Ice Square',
+    year: 2026,
+    medium: 'aquarelle on paper',
+    size: '20 × 20 cm',
     description:
-      'The first in a dedicated mandala series — eight-fold symmetry built up in layers of warm gold and deep violet, exploring the emergence of order from spontaneous mark-making.',
+      'A study in symmetry and the shifting qualities of blue. Intricate patterns unfold from a central snowflake form.',
     imagePath: './assets/artworks/icesquare.jpg',
-    altText: 'An eight-fold mandala in gold and violet oil paint with intricate pattern detail',
+    altText: 'Blue and turquoise aquarelle painting with intricate, symmetrical pattern detail',
     collection: 'Mandala Studies',
-    status: 'personal collection',
+    status: 'Available',
   },
   {
     id: 'm-002',
