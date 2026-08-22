@@ -38,7 +38,7 @@ export const artworks: Artwork[] = [
     imagePath: './assets/artworks/icesquare.jpg',
     altText: 'Blue and turquoise aquarelle painting with intricate, symmetrical pattern detail',
     collection: 'Mandala Studies',
-    status: 'Available',
+    status: 'available',
   },
   {
     id: 'm-002',
