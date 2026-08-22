@@ -57,11 +57,11 @@ export const artworks: Artwork[] = [
     id: 'm-003',
     title: 'Psychedelic Radiance',
     year: 2026,
-    medium: 'Oil on canvas',
+    medium: 'aquarelle on paper',
     size: 'A3 (29.7 × 42 cm)',
     description:
       'A large-format mandala exploring psychedelic colour and the tension between chaos and symmetry — vivid, layered, and alive with pattern energy.',
-    imagePath: './assets/artworks/garden-notes-autumn.svg',
+    imagePath: './assets/artworks/rainbowa3.jpg',
     altText: 'A large psychedelic mandala painting in vivid colour with radiating symmetry',
     collection: 'Mandala Studies',
     status: 'available',
