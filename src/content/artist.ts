@@ -150,6 +150,9 @@ export const artist = {
     intro:
       "Whether you’re interested in a commission, a collaboration, or simply would like to say hello, I’d love to hear from you.",
     email: 'kalilladoscope@gmail.com',
+    // Web3Forms access key — safe to keep public, it only authorizes form
+    // submissions to be relayed by web3forms.com, see /email.md for details.
+    web3formsAccessKey: 'bfa11837-73f9-44cf-ae30-9f5ecc090263',
     location: 'Australia',
     social: [
       {

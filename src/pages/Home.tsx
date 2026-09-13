@@ -230,16 +230,48 @@ function Commissions() {
 function Contact() {
   const { contact } = artist;
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Static site: form uses mailto action; this just shows a thank-you note
     const form = e.currentTarget;
-    const name = (form.elements.namedItem('name') as HTMLInputElement).value;
-    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
-    window.location.href = `mailto:${contact.email}?subject=Enquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    setSubmitted(true);
+
+    // Honeypot: bots tend to fill every field, real visitors never see this one
+    const botcheck = (form.elements.namedItem('botcheck') as HTMLInputElement).checked;
+    if (botcheck) return;
+
+    setSending(true);
+    setError(false);
+
+    const formData = new FormData(form);
+    formData.append('access_key', contact.web3formsAccessKey);
+    // NOTE: ccemail is a Web3Forms Pro-only feature (confirmed via a live
+    // 400 response: "You are trying to use a Pro feature, Please Upgrade
+    // to use ccemail"). Submissions are delivered to whichever email
+    // address the access key itself is registered to — see email.md.
+    const userSubject = (formData.get('subject') as string) || 'General enquiry';
+    formData.set('subject', `${userSubject} — from ${formData.get('name')} (kalilladoscope.com)`);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      });
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        console.error('Web3Forms rejected the submission:', response.status, result.message);
+        setError(true);
+      }
+    } catch (err) {
+      console.error('Web3Forms request failed:', err);
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -290,10 +322,18 @@ function Contact() {
             </p>
             {submitted ? (
               <p style={{ color: 'var(--accent)', fontFamily: 'var(--font-serif)', fontSize: '1.05rem' }}>
-                Thank you — your mail client should have opened. I look forward to hearing from you.
+                Thank you — your message has been sent. I'll get back to you soon.
               </p>
             ) : (
               <form className="contact__form" onSubmit={handleSubmit} noValidate>
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{ display: 'none' }}
+                  aria-hidden="true"
+                />
                 <div className="form-field">
                   <label htmlFor="contact-name">Your name</label>
                   <input
@@ -335,7 +375,15 @@ function Contact() {
                     required
                   />
                 </div>
-                <Button type="submit">Send Message</Button>
+                {error && (
+                  <p style={{ color: 'var(--accent)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                    Something went wrong sending your message. Please try again, or email{' '}
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a> directly.
+                  </p>
+                )}
+                <Button type="submit" disabled={sending}>
+                  {sending ? 'Sending…' : 'Send Message'}
+                </Button>
               </form>
             )}
           </div>
