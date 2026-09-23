@@ -152,7 +152,7 @@ export const artist = {
     email: 'kalilladoscope@gmail.com',
     // Web3Forms access key — safe to keep public, it only authorizes form
     // submissions to be relayed by web3forms.com, see /email.md for details.
-    web3formsAccessKey: 'bfa11837-73f9-44cf-ae30-9f5ecc090263',
+    web3formsAccessKey: '1bb314a7-cf66-4d97-b0e8-463e6640fd88',
     location: 'Australia',
     social: [
       {
