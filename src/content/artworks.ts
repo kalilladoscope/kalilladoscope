@@ -79,4 +79,17 @@ export const artworks: Artwork[] = [
     collection: 'Geometric Meditations',
     status: 'available',
   },
+  {
+    id: 'gm-001',
+    title: 'Frostfire',
+    year: 2026,
+    medium: 'aquarelle on paper',
+    size: 'A3 (40 × 40 cm)',
+    description:
+      'A mandala that was originally meant to be all blue but did not feel balanced without the warm tones',
+    imagePath: './assets/artworks/frostfire.jpg',
+    altText: 'A large aquarelle mandala with the tones of embers and frost',
+    collection: 'Mandala Studies',
+    status: 'available',
+  },
 ];
