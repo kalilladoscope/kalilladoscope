@@ -92,4 +92,17 @@ export const artworks: Artwork[] = [
     collection: 'Mandala Studies',
     status: 'available',
   },
+    {
+    id: 'gm-003',
+    title: 'Mosslight',
+    year: 2026,
+    medium: 'aquarelle on paper',
+    size: 'A4 (21.0 × 29.7 cm)',
+    description:
+      'A mandala that combines the tones of a forest in a dynamic composition',
+    imagePath: './assets/artworks/mosslight.jpg',
+    altText: 'A large aquarelle mandala with green tones',
+    collection: 'Mandala Studies',
+    status: 'available',
+  },
 ];
