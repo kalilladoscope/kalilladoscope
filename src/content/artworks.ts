@@ -80,7 +80,7 @@ export const artworks: Artwork[] = [
     status: 'available',
   },
   {
-    id: 'gm-001',
+    id: 'gm-002',
     title: 'Frostfire',
     year: 2026,
     medium: 'aquarelle on paper',
