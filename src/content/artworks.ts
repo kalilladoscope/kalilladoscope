@@ -84,7 +84,7 @@ export const artworks: Artwork[] = [
     title: 'Frostfire',
     year: 2026,
     medium: 'aquarelle on paper',
-    size: 'A3 (40 × 40 cm)',
+    size: '40 × 40 cm',
     description:
       'A mandala that was originally meant to be all blue but did not feel balanced without the warm tones',
     imagePath: './assets/artworks/frostfire.jpg',
@@ -103,6 +103,19 @@ export const artworks: Artwork[] = [
     imagePath: './assets/artworks/mosslight.jpg',
     altText: 'A large aquarelle mandala with green tones',
     collection: 'Mandala Studies',
+    status: 'available',
+  },
+  {
+    id: 'gm-004',
+    title: 'Ainulindale',
+    year: 2026,
+    medium: 'aquarelle on paper',
+    size: 'A3 (29.7 × 42 cm)',
+    description:
+      'A large abstract composition inspired by the description of the song that created the world in Tolkien's The Silmarillion',
+    imagePath: './assets/artworks/ainulindale.jpg',
+    altText: 'A large aquarelle composition with the colours of the rainbow',
+    collection: 'Geometric Meditations',
     status: 'available',
   },
 ];
