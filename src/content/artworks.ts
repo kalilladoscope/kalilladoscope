@@ -112,7 +112,7 @@ export const artworks: Artwork[] = [
     medium: 'aquarelle on paper',
     size: 'A3 (29.7 × 42 cm)',
     description:
-      'A large abstract composition inspired by the description of the song that created the world in Tolkien's The Silmarillion',
+      "A large abstract composition inspired by the description of the song that created the world in Tolkien's The Silmarillion",
     imagePath: './assets/artworks/ainulindale.jpg',
     altText: 'A large aquarelle composition with the colours of the rainbow',
     collection: 'Geometric Meditations',
